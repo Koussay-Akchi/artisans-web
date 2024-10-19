@@ -1,13 +1,11 @@
 import Image from "next/image";
 import Logo01 from "@/public/images/logo.png";
-import Logo02 from "@/public/images/logo-02.svg";
+import Logo02 from "@/public/images/logo-02.png";
 import Logo03 from "@/public/images/logo-03.svg";
-import Logo04 from "@/public/images/logo-04.svg";
-import Logo05 from "@/public/images/logo-05.svg";
-import Logo06 from "@/public/images/logo-06.svg";
-import Logo07 from "@/public/images/logo-07.svg";
-import Logo08 from "@/public/images/logo-08.svg";
-import Logo09 from "@/public/images/logo-09.svg";
+import Logo04 from "@/public/images/logo-04.png";
+import Logo05 from "@/public/images/logo-05.png";
+import Logo06 from "@/public/images/logo-06.png";
+import Logo07 from "@/public/images/logo-07.png";
 
 export default function BusinessCategories() {
   return (
@@ -195,10 +193,10 @@ export default function BusinessCategories() {
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
                         className="relative"
-                        src={Logo02}
+                        src={Logo07}
                         width={23}
                         height={22}
-                        alt="Logo 02"
+                        alt="Logo 07"
                       />
                     </div>
                   </div>
@@ -260,40 +258,15 @@ export default function BusinessCategories() {
                     <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                       <Image
                         className="relative"
-                        src={Logo07}
+                        src={Logo02}
                         width={25}
                         height={25}
-                        alt="Logo 07"
+                        alt="Logo 02"
                       />
                     </div>
                   </div>
                 </div>
-                <div className="absolute -translate-x-[292px] opacity-40">
-                  <div className="animate-[breath_6s_ease-in-out_2s_infinite_both]">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
-                      <Image
-                        className="relative"
-                        src={Logo08}
-                        width={20}
-                        height={20}
-                        alt="Logo 08"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute translate-x-[292px] opacity-40">
-                  <div className="animate-[breath_6s_ease-in-out_4s_infinite_both]">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-200/60 bg-white shadow-lg">
-                      <Image
-                        className="relative"
-                        src={Logo09}
-                        width={21}
-                        height={13}
-                        alt="Logo 09"
-                      />
-                    </div>
-                  </div>
-                </div>
+                
               </article>
             </div>
           </div>
