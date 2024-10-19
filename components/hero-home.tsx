@@ -70,8 +70,8 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              The website builder you're <br className="max-lg:hidden" />
-              looking for
+              From <span className=" text-pink-500">Women</span> hands to global
+              markets.
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -79,8 +79,8 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Simple is a modern website builder powered by AI that changes
-                how companies create user interfaces together.
+                Saluting the spirit of our artisans who weave stories of
+                strength and elegance every day.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
                 <div
@@ -93,10 +93,7 @@ export default function HeroHome() {
                     href="#0"
                   >
                     <span className="relative inline-flex items-center">
-                      Start Free Trial{" "}
-                      <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                        -&gt;
-                      </span>
+                      View Shop
                     </span>
                   </a>
                   <a
@@ -111,38 +108,35 @@ export default function HeroHome() {
           </div>
           {/* Hero image */}
           <div
-            className="mx-auto max-w-3xl"
+            className="mx-auto max-w-xl"
             data-aos="zoom-y-out"
             data-aos-delay={600}
           >
-            <div className="relative aspect-video rounded-2xl bg-gray-900 px-5 py-3 shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,theme(colors.slate.300/.8),transparent)1]">
-              <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:bg-[length:16px_9px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,_theme(colors.gray.600)_4.5px,_transparent_0)] after:w-[41px]">
-                <span className="text-[13px] font-medium text-white">
-                  cruip.com
-                </span>
-              </div>
-              <div className="font-mono text-gray-500 [&_span]:opacity-0">
-                <span className="animate-[code-1_10s_infinite] text-gray-200">
-                  npm login
+            <div className="relative aspect-video rounded-lg bg-pink-100 px-3 py-2 shadow-xl before:pointer-events-none before:absolute before:-inset-3 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.pink.300/.8),transparent)1] after:absolute after:-inset-3 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,theme(colors.pink.300/.8),transparent)1] w-full max-h-40">
+              <div className="font-mono text-pink-600 text-sm [&_span]:opacity-0">
+                <span className="animate-[code-1_10s_infinite]">
+                  Empowering women through community support
                 </span>{" "}
+                <br />
                 <span className="animate-[code-2_10s_infinite]">
-                  --registry=https://npm.pkg.github.com
+                  Collaborating with artisans from local communities
                 </span>
                 <br />
                 <span className="animate-[code-3_10s_infinite]">
-                  --scope=@phanatic
+                  Fostering leadership and self-reliance
                 </span>{" "}
+                <br />
                 <span className="animate-[code-4_10s_infinite]">
-                  Successfully logged-in.
+                  Creating lasting social impact.
                 </span>
                 <br />
                 <br />
-                <span className="animate-[code-5_10s_infinite] text-gray-200">
-                  npm publish
+                <span className="animate-[code-5_10s_infinite] text-pink-700">
+                  Supporting women-led businesses
                 </span>
                 <br />
                 <span className="animate-[code-6_10s_infinite]">
-                  Package published.
+                  Building a brighter future together.
                 </span>
               </div>
             </div>
