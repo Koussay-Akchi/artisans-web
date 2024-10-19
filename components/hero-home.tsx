@@ -71,7 +71,7 @@ export default function HeroHome() {
               data-aos-delay={150}
             >
               From <span className=" text-pink-500">Women</span> hands to global
-              markets.
+              markets. 
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
