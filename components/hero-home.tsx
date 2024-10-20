@@ -98,7 +98,7 @@ export default function HeroHome() {
                   </a>
                   <a
                     className="btn w-full bg-white text-gray-800 shadow hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="#0"
+                    href="https://www.facebook.com/profile.php?id=61567228835188"
                   >
                     Learn More
                   </a>

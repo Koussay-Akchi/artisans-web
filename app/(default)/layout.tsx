@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
 import ProductService from "@/services/ProductService";
+import Footer2 from "@/components/ui/footer2";
 
 export default function DefaultLayout({
   children,
@@ -36,7 +37,7 @@ const test = async () => {
 
       <main className="grow">{children}</main>
 
-      <Footer border={true} />
+      <Footer2 />
     </>
   );
 }
