@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
-import ProductCard from "./product-card"; 
+import ProductCard from "./product-card";
 import productService from "@/services/ProductService";
+import ProductInfoModal from "./info-card"; // Import the ProductInfoModal component
+
 const ProductList: React.FC = () => {
   const [products, setProducts] = useState<any[]>([]);
   const [filteredProducts, setFilteredProducts] = useState<any[]>([]);
   const [selectedArtisan, setSelectedArtisan] = useState<string | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<any | null>(null); // Selected product for modal
+  const [isModalOpen, setIsModalOpen] = useState(false); // Manage modal state
 
   useEffect(() => {
     productService.getProductsList().then((response) => {
@@ -14,12 +18,15 @@ const ProductList: React.FC = () => {
   }, []);
 
   const handleViewProduct = (product: any) => {
-    alert(`Viewing product: ${product.nom}`);
+    setSelectedProduct(product);
+    setIsModalOpen(true);
   };
 
   const handleFilterByArtisan = (artisanName: string) => {
     setSelectedArtisan(artisanName);
-    setFilteredProducts(products.filter((product) => product.artisan === artisanName));
+    setFilteredProducts(
+      products.filter((product) => product.artisan === artisanName)
+    );
   };
 
   const handleResetFilter = () => {
@@ -27,11 +34,16 @@ const ProductList: React.FC = () => {
     setFilteredProducts(products);
   };
 
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProduct(null);
+  };
+
   return (
     <div className="relative">
       {selectedArtisan && (
         <div className="absolute top-0 left-0 p-2 bg-gray-300 text-black rounded-lg">
-          Artisan name: {selectedArtisan} 
+          Artisan name: {selectedArtisan}
           <button className="ml-2 text-red-500" onClick={handleResetFilter}>
             (Reset)
           </button>
@@ -47,6 +59,12 @@ const ProductList: React.FC = () => {
           />
         ))}
       </div>
+
+      <ProductInfoModal
+        product={selectedProduct}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </div>
   );
 };

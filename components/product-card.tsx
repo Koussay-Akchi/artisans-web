@@ -13,9 +13,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
   onFilterByArtisan,
 }) => {
   return (
-    <div className="min-w-64 bg-white shadow-md p-4 rounded-lg m-2">
+    <div className="min-w-64 bg-white shadow-md p-4 rounded-lg m-2 ">
       <h3 className="text-lg font-bold">{product.nom}</h3>
-      <p>{product.description}</p>
+      <p className=" whitespace-nowrap text-ellipsis max-w-full overflow-hidden">{product.description}</p>
       <p className="font-semibold">{product.prix} TND</p>
       <p>
         {product.ville}, {product.gouvernorat}
