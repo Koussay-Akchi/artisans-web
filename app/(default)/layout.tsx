@@ -15,10 +15,6 @@ export default function DefaultLayout({
 }: {
   children: React.ReactNode;
 }) {
-const test = async () => {
-  const response = await ProductService.getProductsList();
-  console.log(response.data);
-}
 
   useEffect(() => {
     AOS.init({
@@ -28,7 +24,6 @@ const test = async () => {
       easing: "ease-out-cubic",
     });
 
-    test();
   });
 
   return (
